@@ -64,3 +64,9 @@ Provider Name>` with a valid KMS provider name.
 ## Notes
 
 The original version of this tutorial is located [here](https://github.com/mongodb/docs/tree/master/source/includes/qe-tutorials/python/)
+
+To install the libmongocrypt on Mac OS:
+
+```bash
+brew install mongodb/brew/libmongocrypt
+```
