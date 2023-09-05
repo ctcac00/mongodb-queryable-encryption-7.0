@@ -60,3 +60,7 @@ Provider Name>` with a valid KMS provider name.
 1. Run `python3 queryable-encryption-tutorial.py` to run the application.
 
 1. If successful, the application will print the sample document to the console.
+
+## Notes
+
+The original version of this tutorial is located [here](https://github.com/mongodb/docs/tree/master/source/includes/qe-tutorials/python/)
