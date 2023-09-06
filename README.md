@@ -24,20 +24,18 @@ see [Installation Requirements](https://www.mongodb.com/docs/manual/core/queryab
 
 1. Create a file in the root of your directory named `.env`.
 
-1. Copy the contents of `envrc_template` into the `.env` file.
+2. Copy the contents of `.env.template` into the `.env` file.
 
-1. Replace the placeholder values in the `.env` file with your own credentials.
+3. Replace the placeholder values in the `.env` file with your own credentials.
    For more information on setting credentials, see
-   [Queryable Encryption Tutorials](https://www.mongodb.com/docs/manual/core/queryable-encryption/tutorials/)
-   for KMS credentials or the
    [Quick Start](https://www.mongodb.com/docs/manual/core/queryable-encryption/quick-start/)
    for local key provider credentials.
 
-   > **Note:** The sample application uses the `pydotenv` package to access
+   > **Note:** The sample notebook uses the `pydotenv` package to access
    > the credentials as if they were defined as environment variables, but
    > does not overwrite any environment variables you currently have set.
 
-1. Create a three-node replica set.
+4. Create a three-node replica set.
 
    **Note:** If you are using [mtools](https://github.com/rueckstiess/mtools),
    you can create a replica set by running the following command:
@@ -46,20 +44,16 @@ see [Installation Requirements](https://www.mongodb.com/docs/manual/core/queryab
    mlaunch init --replicaset --nodes 3
    ```
 
-## Run the Application
+## Run the Notebook
 
-1. In a shell, navigate to the directory in which the application
-   is saved.
+1. In a shell, navigate to the directory where you cloned this repo.
 
-1. Run `python3 -m pip install -r requirements.txt` to install the Python driver and
+2. Run `python3 -m pip install -r requirements.txt` to install the Python driver and
    `pymongocrypt`.
 
-1. In `queryable-encryption-tutorial.py`, replace the placeholder `<Your KMS
-Provider Name>` with a valid KMS provider name.
+3. Run `jupyter lab` to open Jupyter Lab and then open the file _QE.ipynb_.
 
-1. Run `python3 queryable-encryption-tutorial.py` to run the application.
-
-1. If successful, the application will print the sample document to the console.
+4. Follow the notebook to insert an encrypted document in MongoDB.
 
 ## Notes
 
@@ -67,6 +61,6 @@ The original version of this tutorial is located [here](https://github.com/mongo
 
 To install the libmongocrypt on Mac OS:
 
-```bash
+```sh
 brew install mongodb/brew/libmongocrypt
 ```
