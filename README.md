@@ -31,9 +31,8 @@ see [Installation Requirements](https://www.mongodb.com/docs/manual/core/queryab
    [Quick Start](https://www.mongodb.com/docs/manual/core/queryable-encryption/quick-start/)
    for local key provider credentials.
 
-   > **Note:** The sample notebook uses the `pydotenv` package to access
-   > the credentials as if they were defined as environment variables, but
-   > does not overwrite any environment variables you currently have set.
+   > **Tip:** The _SHARED_LIB_PATH_ must point to the actual filename
+   > not the folder where it is located
 
 4. Create a three-node replica set.
 
