@@ -12,8 +12,8 @@ The following sections provide instructions on how to set up and run this projec
 To run this sample app, you first need to install the following
 dependencies:
 
-- MongoDB Server version 7.0 or later
-- Automatic Encryption Shared Library version 7.0 or later
+- MongoDB Server version 7.0 or later (you can also use [MongoDB Atlas](https://cloud.mongodb.com))
+- Automatic Encryption Shared Library version 7.0 or later ([MongoDB Download Center](https://www.mongodb.com/download-center/enterprise/releases))
 - `python3`
 - `pip`
 
@@ -34,7 +34,7 @@ see [Installation Requirements](https://www.mongodb.com/docs/manual/core/queryab
    > **Tip:** The _SHARED_LIB_PATH_ must point to the actual filename
    > not the folder where it is located
 
-4. Create a three-node replica set.
+4. [Optional] Create a three-node replica set.
 
    **Note:** If you are using [mtools](https://github.com/rueckstiess/mtools),
    you can create a replica set by running the following command:
@@ -63,3 +63,5 @@ To install the libmongocrypt on Mac OS:
 ```sh
 brew install mongodb/brew/libmongocrypt
 ```
+
+Also for Mac OS with M1, the Automatic Encryption Library direct download link is [here](https://downloads.mongodb.com/osx/mongo_crypt_shared_v1-macos-arm64-enterprise-7.0.1.tgz)
