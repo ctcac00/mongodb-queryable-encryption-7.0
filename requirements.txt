@@ -1,4 +1,4 @@
-jupyterlab==4.0.5
+jupyterlab==4.0.11
 pymongo==4.5.0
 pymongocrypt==1.7.0
 mtools==1.7.2
